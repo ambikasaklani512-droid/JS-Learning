@@ -20,4 +20,6 @@ This folder includes all the basic Javascript based projects which helps in unde
 These are the practice projects which i learned in the process of learning javascript. Again helps in understanding JS better.
 
 
+
+### message to learners
 All these mini projects are based on HTML,CSS and javascript. For learning JS better we should practice on multiple projects.
