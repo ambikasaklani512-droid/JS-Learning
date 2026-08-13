@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+        }
+        #uploadbtn{
+            padding: 10px 20px;
+            background-color: rgb(2, 128, 2);
+            color: #fff;
+            border-radius: 2%;
+            font-weight: 450;
+        }
+        #uploadbtn:hover{
+            cursor: pointer;
+            background-color: rgb(1, 80, 1);
+        }
+        #file{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <input id="file" type="file">
+        <div id="uploadbtn">Upload File</div>
+    </div>
+<script src="practice3_fileupload_change.js"></script>
+</body>
+</html>

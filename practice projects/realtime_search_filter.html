@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Profile Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .search-box input {
+            width: 100%;
+            max-width: 500px;
+            padding: 14px 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .search-box input:focus {
+            border-color: #4a90e2;
+        }
+
+        .profiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            /* box-shadow: [inset] [offset-x] [offset-y] [blur-radius] [spread-radius] [color]; */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .profile-name {
+            font-size: 22px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Profile Search</h1>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search profiles...">
+        </div>
+
+        <div class="profiles">
+
+            <!-- <div class="card">
+                <img src="https://i.pravatar.cc/150?img=1" alt="">
+                <h2 class="profile-name">Alice Johnson</h2>
+                <p>Frontend Developer</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pravatar.cc/150?img=2" alt="">
+                <h2 class="profile-name">Michael Brown</h2>
+                <p>Backend Developer</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pravatar.cc/150?img=3" alt="">
+                <h2 class="profile-name">Sophia Williams</h2>
+                <p>UI/UX Designer</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pravatar.cc/150?img=4" alt="">
+                <h2 class="profile-name">Daniel Miller</h2>
+                <p>Software Engineer</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pravatar.cc/150?img=5" alt="">
+                <h2 class="profile-name">Emma Davis</h2>
+                <p>Data Scientist</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pravatar.cc/150?img=6" alt="">
+                <h2 class="profile-name">James Wilson</h2>
+                <p>DevOps Engineer</p>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="realtime_search_filter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* padding: 40px; */
+}
+
+.heading {
+    margin-top: 5%;
+}
+
+.heading h1 {
+    font-size: 50px;
+}
+
+#cardscontainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10rem;
+    flex: 1;
+    /* //fill the remaining space */
+}
+
+/* LEFT BUTTONS */
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+    gap: 15px;
+}
+
+.actions button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+}
+
+button:hover {
+    background-color: #8b8b8b;
+}
+
+/* CARD STACK */
+
+#cardscontainer {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    /* enough to show the stack */
+}
+
+.card-stack {
+    position: relative;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+/* 
+.card-stack:nth-child(n+4){
+    display: none; /* hide the rest if desired */
+
+
+
+.card {
+    width: 450px;
+    height: 360px;
+    background: white;
+    border-radius: 22px;
+    padding: 22px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .08);
+}
+
+.card:nth-child(1) {
+    z-index: 3;
+    transform: translateY(0);
+}
+
+.card:nth-child(2) {
+    z-index: 2;
+    transform: translateY(15px) scale(.98);
+}
+
+.card:nth-child(3) {
+    z-index: 1;
+    transform: translateY(30px) scale(.96);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    margin: 6px 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 18px 15px;
+    font-size: 38px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    border: none;
+    padding: 15px 30px;
+    margin: 10px 38px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.call {
+    background: black;
+    color: white;
+    margin: 0 20px;
+}
+
+.msg {
+    padding: 0 20px;
+    background: #ececec;
+}
+
+
+/* form container */
+
+.form-container {
+    background-color: #262626;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: #262626;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 35%;
+    padding: 12px 0;
+}
+
+.form-container h2 {
+    color: #fff;
+    font-size: 28px;
+    margin: 25px 0;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    color: #d8d8d8;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    background: #3a3a3a;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #8b8b8b;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #ffffff;
+}
+
+.create-btn,
+.close-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: .3s;
+}
+
+.create-btn {
+    background: #111;
+    color: white;
+}
+
+.create-btn:hover {
+    background: #000;
+}
+
+.close-btn {
+    background: #a30000;
+    color: white;
+}
+
+.close-btn:hover {
+    background: #850000;
+}

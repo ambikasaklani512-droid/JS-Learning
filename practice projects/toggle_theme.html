@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #ffffff;
+            color: #222;
+            transition: 0.3s;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+        }
+
+        /* Dark Theme */
+        .dark {
+            background: #1f1f1f;
+            color: white;
+        }
+
+        .dark button {
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        #themeBtn:hover{
+            background-color: #0255ae;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Theme Toggle</h1>
+        <p>Click the button to switch themes.</p>
+
+        <button id="themeBtn">
+            🌙 Toggle Theme
+        </button>
+    </div>
+
+    <script src="toggle_theme.js"></script>
+</body>
+
+</html>

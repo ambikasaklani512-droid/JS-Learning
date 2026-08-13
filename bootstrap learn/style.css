@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+header{
+    background: linear-gradient(to right,#28c1e4,#95e3f4);
+}
+
+.left{
+    max-width: 5px;
+}
+
+#call{
+    background: linear-gradient(to right,#20c5ea,#1084dd);
+}
+#call:hover{
+    background: #1084dd;
+}
+
+main{
+    padding: 62px;
+}
+.left_row{
+    gap: 120px;
+}
+.main_left{
+    max-width: 50%;
+}
+.main_right{
+    border-radius: 12px;
+    max-width: 37%;
+    max-height: 50%;
+}
+.main_left h1{
+    font-size: 3.3rem;
+    font-weight: 800;
+}
+.main_left h1 i{
+    color: #1084dd;
+}
+.main_left{
+    padding: 2rem 1rem;
+}
+
+li{
+    font-size: large;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.buttons .book_btn{
+    background: linear-gradient(to right,#20c5ea,#1084dd);
+}
+.book_btn:hover{
+    background: #1084dd;
+}
+
+.submit_btn{
+    width: 100%;
+    background: linear-gradient(to right,#20c5ea,#1084dd);
+}
+.submit_btn:hover{
+    background: #1084dd;
+}
+
+.highlights{
+    padding: 6rem 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.highlights button{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right,#20c5ea,#1084dd);
+}
+
+ #google-ad-sense ul li{
+    padding: 5px 0;
+ }
+.faqs-btn {
+background: linear-gradient(to right,#20c5ea,#1084dd);
+}
+button:hover{
+    background: #1084dd;
+}
+
+.faqs{
+    margin: 150px 0;
+}
+
+.accordion-button{
+    font-size: large;
+    color: #0c65a9;
+}
+
+.left-footer{
+    max-width: 295px;
+}
+.left-footer-icon{
+    max-width: 5px;
+}
+.left-footer-icons .icon{
+    border-radius: 50%;
+}
+.left-footer-icons .icon img{
+    max-width: 30px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 450;
+}
+footer{
+    background: linear-gradient(to bottom,#28c1e4,#95e3f4);
+}

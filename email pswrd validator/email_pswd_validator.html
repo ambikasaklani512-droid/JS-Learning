@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email & Password Validator</title>
+    <link rel="stylesheet" href="email_pswd_validator.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="validatorForm">
+            <h2>Email & Password Validator</h2>
+
+            <!-- Email -->
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    autocomplete="off"
+                >
+                <small class="message" id="emailMessage"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+                <small class="message" id="passwordMessage"></small>
+            </div>
+
+            <!-- Button -->
+            <button type="submit">Validate</button>
+        </form>
+             <div id="resultMsg"></div>
+    </div>
+
+    <script src="email_pswd_validator.js"></script>
+
+</body>
+</html>

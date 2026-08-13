@@ -1,0 +1,51 @@
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-sm, .container-md, .container-xl, .container-xxl{
+        max-width: 1170px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width: 800px){
+  .right{
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    background: #fff;
+    padding: 25px 25px;
+  }
+  .chat, #call{
+    margin: 0 20px;
+  }
+  .left_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_left{
+    max-width: 80%;
+  }
+  .main_right{
+    max-width: 80%;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .right-footer-info{
+    width: 100%;
+    gap: 12px;
+  }
+  #faqs-btn{
+    display: flex;
+    justify-content: center;
+  }
+  #myTab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

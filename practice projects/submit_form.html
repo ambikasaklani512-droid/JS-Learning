@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #main {
+            padding: 20px 20px;
+            width: 100vw;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 2px 2px;
+            width: 200px;
+        }
+
+        #submit {
+            width: 80px;
+            padding: 5px 10px;
+            background-color: rgb(146, 231, 146);
+        }
+
+        #submit:hover {
+            background-color: forestgreen;
+        }
+
+        .cardcontainer {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            height: 250px;
+            width: 200px;
+            border: 1px solid #fff;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile {
+            border: 1px solid #fff;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            /*profile k bhar na jaye img*/
+        }
+
+        .profile img {
+            /* image profile div me contain kr jaye */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+        }
+
+        .card h5,
+        p {
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <form action="">
+            <input type="text" placeholder="profile picture">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="about">
+            <input type="text" placeholder="description">
+            <input id="submit" type="submit">
+        </form>
+
+        <div class="cardcontainer">
+            <!-- <div class="card">
+                <div class="profile">
+                    <img src="https://images.unsplash.com/photo-1784407379957-7531c54fc4e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                </div>
+                <h3>MUGGO </h3>
+                <h5>Quote</h5>
+                <p>- the moment you give up , its game over.</p>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img src="https://images.unsplash.com/photo-1784407379957-7531c54fc4e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                </div>
+                <h3>Name</h3>
+                <h5>About</h5>
+                <p>MUGGO - the moment you give up , its game over.</p>
+            </div>
+            </div> -->
+        </div>
+
+    </div>
+    <script src="submit_form.js"></script>
+</body>
+
+</html>
