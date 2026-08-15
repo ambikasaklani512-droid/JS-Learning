@@ -18,6 +18,8 @@ This folder contains some advanced JS concepts helps in better optimization of J
 These are the practice projects which i learned in the process of learning javascript. Again helps in understanding JS better.
 
 
-
+.
+.
+.
 #### Message to learners !!
 All these mini projects are based on HTML,CSS and javascript. For learning JS better we should practice on multiple projects.
