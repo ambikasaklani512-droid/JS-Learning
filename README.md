@@ -13,8 +13,6 @@ This is also a mini project based on JS helps in grasping js based authenticatio
 ## js advance concepts 
 This folder contains some advanced JS concepts helps in better optimization of JS code and also works in organization's project.
 
-## mini projects
-This folder includes all the basic Javascript based projects which helps in understanding and learning JS better.
 
 ## practice projects
 These are the practice projects which i learned in the process of learning javascript. Again helps in understanding JS better.
